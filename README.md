@@ -43,7 +43,7 @@ So after reading and executing all functions at .qry file, there should be anoth
 
 This assignment took me way less time than the previous, since that were many functions I could use from the other project; still, they weren't the same and instead of working with a doubly linked list, I had to store all the following parameters inside a ternary search tree that should look like this:
 
-![image-20220621233652947](/home/aeiltsi/.config/Typora/typora-user-images/image-20220621233652947.png)
+![ternarytree](/home/aeiltsi/Pictures/ternarytree.png)
 
 | COMMAND |             PARAMETERS              | DESCRIPTION                                                  |
 | :-----: | :---------------------------------: | :----------------------------------------------------------- |
@@ -71,6 +71,8 @@ In order to make some calculations, it was given the following table:
 |      text       |        60        |         90          |        500         |
 
 So after reading and executing all functions at .qry file, there should be another SVG file and a report (.txt) of the processes executed and the final score.
+
+
 
 
 
