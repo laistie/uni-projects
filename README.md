@@ -1,12 +1,32 @@
 # University projects
 
-In this repository are located some of the projects I developed for my university classes.
+____
+
+In this repository are located some of the projects I developed for my university classes. Most of them (if not all) output reports in Portuguese, but are ~~almost~~ fully explained in English in this README; and I should warn you that I haven't gone through all of them before uploading them to my GitHub, although I can assure you they work :sweat_smile:
+
+
+
+## Computer Architecture :cd:
+
+___
+
+### MIPS assignments (Assembly)
+
+> 3rd semester (2022)
+
+Since this was my very first time dealing with Assembly (and earlier in this same semester, Machine Code), the folder won't contain all of my assignments, but the most interesting ones shall be included nonetheless.
+
+> 4th semester (2023)
+
+This folder includes some more difficult exercises, covering topics such as dynamic memory allocation and manipulating files.
 
 
 
 ## Data Structures :desktop_computer:
 
-#### T1 (C)
+___
+
+### T1 (C)
 
 > 2nd semester (2022)
 
@@ -14,18 +34,18 @@ In this assignment, since it was my very first data structures project, I mainly
 
 | COMMAND |             PARAMETERS              | DESCRIPTION                                                  |
 | :-----: | :---------------------------------: | :----------------------------------------------------------- |
-|    c    |      i, x, y, r, border, fill       | Draws a circle centered at (x, y) with ray r, identifier i and colored by border and fill colors |
-|    r    |     i, x, y, w, h, border, fill     | Draws a rectangle with (x, y), (x + w, y), (x, y + h) and (x + w, y + h) vertexes, identifier i and is colored by border and fill colors |
-|    l    |      i, x1, y1, x2, y2, color       | Draws a line that links a point (x1, y1) to another point (x2, y2), has identifier i and color specified by the parameters |
-|    t    | i, x, y, border, fill, anchor, text | Draws a text at (x, y) that can have an anchor at the beginning, middle or end, has identifier i and color specified by the parameters |
+|    c    |      i, x, y, r, border, fill       | Draws a circle centered at (_x_, _y_) with ray _r_, identifier _i_ and colored by _border_ and _fill_ colors |
+|    r    |     i, x, y, w, h, border, fill     | Draws a rectangle with (_x_, _y_), (_x_ + _w_, _y_), (_x_, _y_ + _h_) and (_x_ + _w_, _y_ + _h_) vertexes, identifier _i_ and is colored by _border_ and _fill_ colors |
+|    l    |      i, x1, y1, x2, y2, color       | Draws a line that links a point (_x1_, _y1_) to another point (_x2_, _y2_), has identifier _i_ and color specified by the parameters |
+|    t    | i, x, y, border, fill, anchor, text | Draws a text at (_x_, _y_) that can have an anchor at the beginning, middle or end, has identifier _i_ and color specified by the parameters |
 
-After reading the first query file and storing all parameters in the doubly linked list, a SVG file should be generated, containing all geometric shapes specified at .geo file. Following that, there could be a .qry file with some other functions:
+After reading the first query file and storing all parameters in the **doubly linked list**, a SVG file should be generated, containing all geometric shapes specified at .geo file. Following that, there could be a .qry file with some other functions:
 
 | COMMAND |       PARAMETERS        | DESCRIPTION                                                  |
 | :-----: | :---------------------: | ------------------------------------------------------------ |
-|   inp   |            i            | Inserts the coordinates of the geometric shape identified by i at a static circular queue; in case of lines, inserts the coordinate with lesser x, if they're equal, inserts the coordinate with lesser y |
+|   inp   |            i            | Inserts the coordinates of the geometric shape identified by _i_ at a **static circular queue**; in case of lines, inserts the coordinate with lesser _x_, if they're equal, inserts the coordinate with lesser _y_ |
 |   rmp   |                         | Removes from database the first coordinate inserted at the queue |
-|   pol   |  i, d, e, border, fill  | Draws the polygon with vertexes at coordinates that are in the queue. The lines that compose the polygon have identifiers starting at i and there's a distance d between the fulfillment lines, which have a thickness e, of the geometric shape. The polygon's color is given by border and fill refers to the fulfillment lines' color |
+|   pol   |  i, d, e, border, fill  | Draws the polygon with vertexes at coordinates that are in the queue. The lines that compose the polygon have identifiers starting at _i_ and there's a distance _d_ between the fulfillment lines, which have a thickness _e_, of the geometric shape. The polygon's color is given by border and fill refers to the fulfillment lines' color |
 |   clp   |                         | Removes from database all coordinates of the polygon         |
 |   sel   |       x, y, w, h        | Selects all geometric shapes fully inside the area specified by the parameters; doesn't consider previous selections |
 |  sel+   |       x, y, w, h        | Similar to sel, but it considers previous selections, adding new geometric shapes to the selected ones |
@@ -37,7 +57,7 @@ So after reading and executing all functions at .qry file, there should be anoth
 
 
 
-#### T2 (C)
+### T2 (C)
 
 > 2nd semester (2022)
 
@@ -74,11 +94,11 @@ So after reading and executing all functions at .qry file, there should be anoth
 
 
 
-
-
 ## Discrete Mathematics :triangular_ruler:
 
-#### Linear congruence applications (Python)
+___
+
+### Linear congruence applications (Python)
 
 > 2nd semester (2022)
 

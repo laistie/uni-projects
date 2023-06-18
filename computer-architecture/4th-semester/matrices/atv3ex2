@@ -1,0 +1,147 @@
+.data
+	comma: .asciiz ", "
+	colon: .asciiz ": "
+	space: .asciiz " "
+	newLine: .asciiz "\n"
+	matrix: .asciiz "===MATRIZ==="
+	sumText: .asciiz "A soma dos elementos da diagonal secundária é: "
+	
+.text
+	main:
+		jal alocaMatriz
+		j leitura
+		
+	fim: #fim do programa
+		li $v0, 10
+		syscall
+	
+	alocaMatriz:
+		li $t0, 4
+		#$a0 = $t0 * 4 = número de bytes necess�rios para alocação de memória
+		mul $t1, $t0, $t0
+		li $a1, 4
+		mul $a0, $t1, $a1
+		#alocação dinâmica de memória
+		li $v0, 9
+		syscall
+		move $s0, $v0 #$s0 -> endereço de memória da matriz
+		jr $ra
+	
+	leitura:
+		#leitura dos elementos da matriz
+		li $t2, 0 #$t2 = 0, atualiza��o do contador para linha
+		forLine:
+			li $t3, 0 #$t3 = 0, atualiza��o do contador para coluna
+			forColumn:
+				jal indice
+				jal escrita
+				add $t3, $t3, 1 #atualiza o contador do loop
+				blt $t3, $t0, forColumn #verifica��o da condi��o do loop
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLine
+		j print
+			
+	indice: #print do índice do elemento atual da matriz
+		#print da atual linha
+		li $v0, 1
+		move $a0, $t2
+		syscall
+		
+		#print da vírgula
+		li $v0, 4
+		la $a0, comma
+		syscall
+		
+		#print da atual coluna
+		li $v0, 1
+		move $a0, $t3
+		syscall
+		
+		#print dos dois pontos
+		li $v0, 4
+		la $a0, colon
+		syscall
+		
+		jr $ra
+		
+	escrita: #leitura e escrita do elemento da matriz
+		mul $t5, $t2, $t0 #$t5 = n * posi��o atual da linha
+		add $t5, $t5, $t3 #$t5 = $t5 + posi��o atual da coluna
+		mul $t5, $t5, $a1 #$t5 = $t5 * 4, alinhamento de bytes
+		add $t5, $s0, $t5 #$t5 = $t5 + $s0
+		
+		#leitura do elemento
+		li $v0, 5
+		syscall
+		sw $v0, 0($t5) #armazenamento do inteiro lido
+		jr $ra
+	
+	somaDS:
+		li $t1, 0 #$t1 = 0, atualização do acumulador da soma dos elementos da DP
+		li $t2, 0 #$t2 = 0, atualização do contador para linha
+		forLineSum:
+			move $t3, $t0
+			sub $t3, $t3, 1
+			sub $t3, $t3, $t2
+			jal alignMatrix
+			jal addDS
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLineSum
+		#print do texto "O resultado da soma dos elementos da diagonal secundária é: "
+		li $v0, 4
+		la $a0, sumText
+		syscall
+		
+		li $v0, 1
+		move $a0, $t1
+		syscall
+		
+		j fim
+			
+	addDS:
+		lw $a0, 0($t5)
+		add $t1 $t1, $a0
+		jr $ra
+		
+	print:	
+		jal printNewLine
+		jal printNewLine
+		#print do espa�o
+		li $v0, 4
+		la $a0, matrix
+		syscall
+		jal printNewLine
+		li $t2, 0 #$t2 = 0, atualiza��o do contador para linha
+		forLinePrint:
+			li $t3, 0 #$t3 = 0, atualiza��o do contador para coluna
+			forColumnPrint:
+				jal alignMatrix
+				#print do elemento atual da matriz
+				li $v0, 1
+				lw $a0, 0($t5)
+				syscall
+				
+				#print do espaço
+				li $v0, 4
+				la $a0, space
+				syscall
+	
+				add $t3, $t3, 1 #atualiza o contador do loop
+				blt $t3, $t0, forColumnPrint #verifica��o da condi��o do loop
+			jal printNewLine
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLinePrint
+		j somaDS
+			
+	alignMatrix:
+		mul $t5, $t2, $t0 #$t5 = n * posi��o atual da linha
+		add $t5, $t5, $t3 #$t5 = $t5 + posi��o atual da coluna
+		mul $t5, $t5, $a1 #$t5 = $t5 * 4, alinhamento de bytes
+		add $t5, $s0, $t5 #$t5 = $t5 + $s0
+		jr $ra
+
+	printNewLine: #print de nova linha
+		li $v0, 4
+		la $a0, newLine
+		syscall
+		jr $ra

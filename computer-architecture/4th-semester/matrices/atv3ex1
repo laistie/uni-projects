@@ -1,0 +1,306 @@
+.data
+	readText: .asciiz "Insira o tamanho n da matriz quadrada nxn: "
+	errorRead: .asciiz "Tamanho n inválido, insira um n <= 8: "
+	comma: .asciiz ", "
+	colon: .asciiz ": "
+	space: .asciiz " "
+	newLine: .asciiz "\n"
+	matrix: .asciiz "===MATRIZ==="
+	matrixSort: .asciiz "===MATRIZ ORDENADA==="
+	subText: .asciiz "O resultado da subtração é: "
+	greaterText: .asciiz "O maior elemento acima da diagonal principal é: "
+	lesserText: .asciiz "O menor elemento abaixo da diagonal principal é: "
+	array: .space 256
+
+.text
+	main:
+		jal leituraN
+		j leitura
+		
+	fim: #fim do programa
+		li $v0, 10
+		syscall
+		
+	leituraN: #leitura inicial do tamanho da matriz
+		#print do texto "Insira o tamanho n da matriz quadrada nxn:"
+		li $v0, 4
+		la $a0, readText
+		syscall
+		#armazenamento do número n em t0
+		li $v0, 5
+		syscall
+		move $t0, $v0
+		j verificaN #jump para verificação
+		alocaN:
+			#$a0 = $t0 * 4 = número de bytes necess�rios para alocação de memória
+			mul $t1, $t0, $t0
+			li $a1, 4
+			mul $a0, $t1, $a1
+			#alocação dinâmica de memória
+			li $v0, 9
+			syscall
+			move $s0, $v0 #$s0 -> endereço de memória da matriz
+		jr $ra
+	
+	verificaN: #verificação de n <= 8
+		li $t1, 8
+		ble $t0, $t1, alocaN
+		#print do texto "Tamanho n inválido, insira um n <= 8: "
+		li $v0, 4
+		la $a0, errorRead
+		syscall
+		#armazenamento do número n em t0
+		li $v0, 5
+		syscall
+		move $t0, $v0
+		j verificaN
+		
+	leitura: #leitura dos elementos da matriz
+		li $t2, 0 #$t2 = 0, atualiza��o do contador para linha
+		forLine:
+			li $t3, 0 #$t3 = 0, atualiza��o do contador para coluna
+			forColumn:
+				jal indice
+				jal escrita
+				add $t3, $t3, 1 #atualiza o contador do loop
+				blt $t3, $t0, forColumn #verifica��o da condi��o do loop
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLine
+		j soma
+		
+	indice: #print do índice do elemento atual da matriz
+		#print da atual linha
+		li $v0, 1
+		move $a0, $t2
+		syscall
+		
+		#print da vírgula
+		li $v0, 4
+		la $a0, comma
+		syscall
+		
+		#print da atual coluna
+		li $v0, 1
+		move $a0, $t3
+		syscall
+		
+		#print dos dois pontos
+		li $v0, 4
+		la $a0, colon
+		syscall
+		
+		jr $ra
+		
+	escrita: #leitura e escrita do elemento da matriz
+		mul $t5, $t2, $t0 #$t5 = n * posi��o atual da linha
+		add $t5, $t5, $t3 #$t5 = $t5 + posi��o atual da coluna
+		mul $t5, $t5, $a1 #$t5 = $t5 * 4, alinhamento de bytes
+		add $t5, $s0, $t5 #$t5 = $t5 + $s0
+		
+		#leitura do elemento
+		li $v0, 5
+		syscall
+		sw $v0, 0($t5) #armazenamento do inteiro lido
+		jr $ra
+	
+	soma: #cálculo das somas de elementos da matriz
+		li $t1, 0 #$t1 = 0, atualização do acumulador da soma dos elementos da DP
+		li $t4, 0 #$t4 = 0, atualização do acumulador da soma dos elementos abaixo da DP
+		li $t2, 0 #$t2 = 0, atualização do contador para linha
+		forLineSum:
+			li $t3, 0 #$t3 = 0, atualização do contador para coluna
+			forColumnSum:
+				jal alignMatrix
+				bgt $t3, $t2, somaAcDP
+				blt $t3, $t2, somaAbDP 
+				updateColumnSum:
+					add $t3, $t3, 1 #atualiza o contador do loop
+					blt $t3, $t0, forColumnSum #verificação da condição do loop
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLineSum
+		jal printNewLine
+		
+		#print do texto "O resultado da subtração é: "
+		li $v0, 4
+		la $a0, subText
+		syscall
+		
+		#realização da subtração e print do resultado
+		sub $t2, $t1, $t4
+		li $v0, 1
+		move $a0, $t2
+		syscall
+		
+		j maiormenor	
+	
+	somaAcDP: #soma dos elementos acima da diagonal principal
+		lw $a0, 0($t5)
+		add $t1, $t1, $a0
+		j updateColumnSum
+		
+	somaAbDP: #soma dos elementos abaixo da diagonal principal
+		lw $a0, 0($t5)
+		add $t4, $t4, $a0
+		j updateColumnSum
+		
+	maiormenor: #verificação de maior elemento acima da DP e menor elemento abaixo da DP
+		li $t1, -1000 #$t1 = -1000, atualização da variável de armazenamento do maior número
+		li $t4, 1000 #$t4 = 1000, atualização da variável de armazenamento do menor número
+		li $t2, 0 #$t2 = 0, atualização do contador para linha
+		forLineLG:
+			li $t3, 0 #$t3 = 0, atualização do contador para coluna
+			forColumnLG:
+				jal alignMatrix
+				bgt $t3, $t2, updateAcDP
+				blt $t3, $t2, updateAbDP 
+				updateColumnLG:
+					add $t3, $t3, 1 #atualiza o contador do loop
+					blt $t3, $t0, forColumnLG #verificação da condição do loop
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLineLG
+		jal printNewLine
+		
+		#print do texto "O maior elemento acima da diagonal principal é: "
+		li $v0, 4
+		la $a0, greaterText
+		syscall
+
+		li $v0, 1
+		move $a0, $t1
+		syscall
+		
+		jal printNewLine
+		
+		#print do texto "O menor elemento abaixo da diagonal principal é: " e do elemento
+		li $v0, 4
+		la $a0, lesserText
+		syscall
+	
+		li $v0, 1
+		move $a0, $t4
+		syscall
+		
+		j buildArray
+		
+	updateAcDP: #atualização do maior elemento acima da DP
+		lw $a0, 0($t5)
+		blt $a0, $t1, updateColumnLG
+		lw $t1, 0($t5)
+		j updateColumnLG
+	
+	updateAbDP: #atualização do menor elemento abaixo da DP
+		lw $a0, 0($t5)
+		bgt $a0, $t4, updateColumnLG
+		lw $t4, 0($t5)
+		j updateColumnLG
+	
+	buildArray: #transformação da matriz em vetor
+		li $t1, 0 ##t1 = 0, atualização do contador de posição alinhado do vetor
+		li $t4, 0 ##t1 = 0, atualização do contador de elementos do vetor
+		li $t2, 0 #$t2 = 0, atualização do contador para linha
+		forLineArr:
+			li $t3, 0 #$t3 = 0, atualização do contador para coluna
+			forColumnArr:
+				jal alignMatrix
+				lw $a0, 0($t5)
+				sw $a0, array($t1) #armazenamento do elemento da matriz no vetor
+				add $t1, $t1, 4 #atualiza a posição do vetor
+				add $t4, $t4, 1 #atualiza número de elementos no vetor
+				add $t3, $t3, 1 #atualiza o contador do loop
+				blt $t3, $t0, forColumnArr #verificação da condição do loop
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLineArr
+		
+	sort: #ordenação da matriz
+		li $t1, 0 #$t1 = 0, atualização do contador de posição alinhado do vetor
+		li $t2, 0 #t2 = 0, atualização do contador
+		move $t6, $t4
+		sub $t6, $t6, 1
+		for:
+			move $t3, $t2 #$t2 = i, $t3 = j
+			add $t3, $t3, 1 #$t3 = $t2 + 1, contador auxiliar
+			mul $t5, $t3, 4 #$t5 = $t3 * 4, contador de posição auxiliar alinhado do vetor
+			forAux:
+				lw $a0, array($t1) #$a0 = array[i]
+				lw $a2, array($t5) #$a2 = array[j]
+				bgt $a0, $a2, remanage #se array[i] > array[j]
+				updateSort:
+					add $t3, $t3, 1 #atualiza contador auxiliar
+					add $t5, $t5, 4 #$t5 = $t3 * 4, contador de posição auxiliar alinhado do vetor
+					blt $t3, $t4, forAux
+			add $t1, $t1, 4 #atualização do contador de posição alinhado do vetor
+			add $t2, $t2, 1 #atualização do contador do loop
+			blt $t2, $t6, for
+		j print
+	
+	remanage:
+		sw $a2, array($t1) #array[i] = array[j]
+		sw $a0, array($t5) #array[j] = temp
+		j updateSort
+																																																																																																																																																																																																																																																															
+	print:	
+		jal printNewLine
+		jal printNewLine
+		#print do espa�o
+		li $v0, 4
+		la $a0, matrix
+		syscall
+		jal printNewLine
+		li $t2, 0 #$t2 = 0, atualiza��o do contador para linha
+		forLinePrint:
+			li $t3, 0 #$t3 = 0, atualiza��o do contador para coluna
+			forColumnPrint:
+				jal alignMatrix
+				#print do elemento atual da matriz
+				li $v0, 1
+				lw $a0, 0($t5)
+				syscall
+				
+				#print do espaço
+				li $v0, 4
+				la $a0, space
+				syscall
+	
+				add $t3, $t3, 1 #atualiza o contador do loop
+				blt $t3, $t0, forColumnPrint #verifica��o da condi��o do loop
+			jal printNewLine
+			add $t2, $t2, 1 
+			blt $t2, $t0, forLinePrint
+	
+	printSorted:
+		jal printNewLine
+		#print do espa�o
+		li $v0, 4
+		la $a0, matrixSort
+		syscall
+		jal printNewLine
+		li $t1, 0 #$t1 = 0, atualização do contador de posição alinhado do vetor
+		li $t2, 0 #$t2 = 0, atualização do contador
+		forPrintSorted:
+			#print do elemento atual do vetor
+			li $v0, 1
+			lw $a0, array($t1)
+			syscall
+				
+			#print do espaço
+			li $v0, 4
+			la $a0, space
+			syscall
+			
+			add $t1, $t1, 4 #atualização do contador de posição alinhado do vetor
+			add $t2, $t2, 1
+			blt $t2, $t4, forPrintSorted
+		j fim
+	
+	alignMatrix:
+		mul $t5, $t2, $t0 #$t5 = n * posi��o atual da linha
+		add $t5, $t5, $t3 #$t5 = $t5 + posi��o atual da coluna
+		mul $t5, $t5, $a1 #$t5 = $t5 * 4, alinhamento de bytes
+		add $t5, $s0, $t5 #$t5 = $t5 + $s0
+		jr $ra
+
+	printNewLine: #print de nova linha
+		li $v0, 4
+		la $a0, newLine
+		syscall
+		jr $ra
