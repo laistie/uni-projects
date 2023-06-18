@@ -1,14 +1,10 @@
 # University projects
 
-____
-
 In this repository are located some of the projects I developed for my university classes. Most of them (if not all) output reports in Portuguese, but are ~~almost~~ fully explained in English in this README; and I should warn you that I haven't gone through all of them before uploading them to my GitHub, although I can assure you they work :sweat_smile:
 
 
 
 ## Computer Architecture :cd:
-
-___
 
 ### MIPS assignments (Assembly)
 
@@ -23,8 +19,6 @@ This folder includes some more difficult exercises, covering topics such as dyna
 
 
 ## Data Structures :desktop_computer:
-
-___
 
 ### T1 (C)
 
@@ -95,8 +89,6 @@ So after reading and executing all functions at .qry file, there should be anoth
 
 
 ## Discrete Mathematics :triangular_ruler:
-
-___
 
 ### Linear congruence applications (Python)
 
