@@ -3,6 +3,53 @@
 In this repository are located some of the projects I developed for my university classes. Most of them (if not all) output reports in Portuguese, but are ~~almost~~ fully explained in English in this README; and I should warn you that I haven't gone through all of them before uploading them to my GitHub, although I can assure you they work :sweat_smile:
 
 
+## Compilers
+
+My first assignments from Compilers were actually developed using **only** C. After some time, I was introduced to Flex and Bison tools and began using them in my projects.
+
+> 5th semester (2024)
+
+### Portugol
+
+### Lexical analyzer
+
+In order to build a C compiler, the first step was making the lexical analyzer, which should use the Flex tool. In this assignment, each recognized token should have its classification printed. For example:
+
+input:
+```C
+if(@)
+{
+    a
+}
+```
+
+output:
+```
+IF
+L_PAREN
+error:lexical:1:4: @
+R_PAREN
+L_CURLY_BRACKET
+IDENTIFIER(a)
+R_CURLY_BRACKET
+```
+
+In the example above, there was also an error message indicating the line and column in which it occurred. Despite the error, the parsing process shall continue until it reaches the end of the input file.
+
+This was the first assignment of Compilers I, but it was already full of details, such as warnings display and max size of identifiers or unterminated comments handling.
+
+### Syntax analyzer
+
+In the specification of this project, there were syntax diagrams that helped declaring the grammar, but it still took a while to define all rules correctly. This step of making a C compiler was marked by the usage of the Bison tool and needed the previous analyzer.
+
+> 6th semester (2025)
+
+### dcmat
+
+### Register Allocation
+
+### Linear Scan
+
 
 ## Computer Architecture :cd:
 
@@ -14,15 +61,17 @@ Since this was my very first time dealing with Assembly (and earlier in this sam
 
 > 4th semester (2023)
 
-This folder includes some more difficult exercises, covering topics such as dynamic memory allocation and manipulating files.
-
+This folder includes some more difficult exercises, covering topics such as dynamic memory allocation and file handling.
 
 
 ## Data Structures :desktop_computer:
 
-### T1 (C)
+All assignments were developed using C language.
+There was also an special rule for all assignments that structs shouldn't be declared in the .h file, making the usage of void* frequent.
 
-> 2nd semester (2022)
+> 2nd semester
+
+### T1
 
 In this assignment, since it was my very first data structures project, I mainly learned how to manipulate given paths in argv in order to work with files (reading and writing) and generate SVG files with them; also I had to use a doubly linked list for storing parameters from a .geo file:
 
@@ -49,11 +98,7 @@ After reading the first query file and storing all parameters in the **doubly li
 
 So after reading and executing all functions at .qry file, there should be another SVG file and a report (.txt) of the processes executed.
 
-
-
-### T2 (C)
-
-> 2nd semester (2022)
+### T2
 
 This assignment took me way less time than the previous, since that were many functions I could use from the other project; still, they weren't the same and instead of working with a doubly linked list, I had to store all the following parameters inside a ternary search tree that should look like this:
 
@@ -66,7 +111,7 @@ This assignment took me way less time than the previous, since that were many fu
 |    l    |      i, x1, y1, x2, y2, color       | Draws a line that links a point (x1, y1) to another point (x2, y2), has identifier i and color specified by the parameters |
 |    t    | i, x, y, border, fill, anchor, text | Draws a text at (x, y) that can have an anchor at the beginning, middle or end, has identifier i and color specified by the parameters |
 
-Each geometric shape would represent a type of "navy equipment" and after generating the first SVG with .geo file, there could be a .qry file with some functions:
+Each geometric shape would represent a type of navy equipment and after generating the first SVG with .geo file, there could be a .qry file with some functions:
 
 | COMMAND |    PARAMETERS    | DESCRIPTION                                                  |
 | :-----: | :--------------: | ------------------------------------------------------------ |
@@ -86,6 +131,36 @@ In order to make some calculations, it was given the following table:
 
 So after reading and executing all functions at .qry file, there should be another SVG file and a report (.txt) of the processes executed and the final score.
 
+### Extra assignment
+
+This one was a little bit more complicated, due to the number of data structures that were involved in the implementation: list, queue and a xyy ternary search tree variant, called yxx tree:
+
+![Yxx Tree](./assets/yxxtree.png)
+
+Basically, it was [T1](#T1) in terms of commands, but this time there was a mandatory .h file for yxx tree that should be followed and couldn't be modified. Also, the ternary search tree should contain the nodes from .geo file, working like a database for consulting.
+
+> 3rd semester (2022)
+
+### T3
+
+This project was named "Pirate Fishing" and the basic components from .geo file - circles, rectangles, lines, texts - were the same as usual. Although each of them represented an element of the fishing:
+
+| GEOMETRIC SHAPE |     ELEMENT    |
+| :-------------: | :------------: |
+|    rectangle    |      ship      |
+|    text >--<    |     lobster    |
+|     text $      |      coin      |
+|  any other text | algae, rubbish | 
+|      circle     |      fish      |
+|       line      |     shrimp     |
+
+Each of the ships can move, throw nets or even fire cannons; their actions cost a certain quantity of energy or can result in the gain of it:
+
+| ACTION |      ENERGY      |
+| :----: | :--------------: |
+|  Move  |  E = distance/5  |
+| Throw  | E = a/25 * d/5   |
+|  Shot  |       E = d      |
 
 
 ## Discrete Mathematics :triangular_ruler:
