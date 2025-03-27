@@ -1,0 +1,47 @@
+RELATÓRIO DAS FUNÇÕES UTILIZADAS NO ARQUIVO .QRY
+
+[*] e 295.000000
+retângulo 4
+	x: 408.644500 
+	y: 289.056863 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 6
+	x: 369.791776 
+	y: 274.257657 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 3
+	x: 343.644500 
+	y: 289.056863 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 5
+	x: 304.791776 
+	y: 274.257657 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 1
+	x: 183.289950 
+	y: 249.512677 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 2
+	x: 248.289950 
+	y: 249.512677 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+
+CONSIDERAÇÕES FINAIS: enlouquecendo cada vez mais.

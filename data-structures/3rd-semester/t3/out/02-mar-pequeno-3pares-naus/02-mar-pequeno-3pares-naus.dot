@@ -1,0 +1,281 @@
+digraph G{
+	node [margin=0 fontcolor=white fontsize=12 width=0.5 shape=circle style=filled]
+	edge [fontcolor=grey fontsize=10]
+	nil [fillcolor=black fixedsize=shape label="nil" width=2]
+	2 [fillcolor=black fixedsize=shape label="id:2 x=248.289950 y=249.512677" width=3]
+	22 [fillcolor=red fixedsize=shape label="id:22 x=158.871689 y=5.593553" width=3]
+	2 -> 22
+	35 [fillcolor=black fixedsize=shape label="id:35 x=98.374869 y=223.437680" width=3]
+	22 -> 35
+	61 [fillcolor=red fixedsize=shape label="id:61 x=72.347484 y=189.684738" width=3]
+	35 -> 61
+	26 [fillcolor=black fixedsize=shape label="id:26 x=19.503834 y=61.997526" width=3]
+	61 -> 26
+	72 [fillcolor=red fixedsize=shape label="id:72 x=3.705034 y=188.253669" width=3]
+	26 -> 72
+	64 [fillcolor=black fixedsize=shape label="id:64 x=3.568909 y=235.014982" width=3]
+	72 -> 64
+	64 -> nil
+	88 [fillcolor=red fixedsize=shape label="id:88 x=2.913978 y=221.987612" width=3]
+	64 -> 88
+	88 -> nil
+	83 [fillcolor=black fixedsize=shape label="id:83 x=5.870655 y=78.156646" width=3]
+	72 -> 83
+	83 -> nil
+	104 [fillcolor=red fixedsize=shape label="id:104 x=7.582474 y=203.874843" width=3]
+	83 -> 104
+	104 -> nil
+	29 [fillcolor=red fixedsize=shape label="id:29 x=45.762095 y=116.146361" width=3]
+	26 -> 29
+	91 [fillcolor=black fixedsize=shape label="id:91 x=32.363666 y=190.053608" width=3]
+	29 -> 91
+	91 -> nil
+	95 [fillcolor=red fixedsize=shape label="id:95 x=39.562902 y=278.048629" width=3]
+	91 -> 95
+	95 -> nil
+	62 [fillcolor=black fixedsize=shape label="id:62 x=47.746941 y=277.183106" width=3]
+	29 -> 62
+	62 -> nil
+	98 [fillcolor=red fixedsize=shape label="id:98 x=55.154011 y=232.809425" width=3]
+	62 -> 98
+	98 -> nil
+	60 [fillcolor=black fixedsize=shape label="id:60 x=90.962922 y=183.141809" width=3]
+	61 -> 60
+	65 [fillcolor=black fixedsize=shape label="id:65 x=83.279662 y=252.888772" width=3]
+	60 -> 65
+	96 [fillcolor=red fixedsize=shape label="id:96 x=74.419830 y=263.806797" width=3]
+	65 -> 96
+	96 -> nil
+	58 [fillcolor=red fixedsize=shape label="id:58 x=87.508682 y=224.713957" width=3]
+	65 -> 58
+	58 -> nil
+	76 [fillcolor=black fixedsize=shape label="id:76 x=93.635159 y=6.309355" width=3]
+	60 -> 76
+	25 [fillcolor=red fixedsize=shape label="id:25 x=91.730821 y=129.981844" width=3]
+	76 -> 25
+	25 -> nil
+	94 [fillcolor=red fixedsize=shape label="id:94 x=98.295892 y=207.112703" width=3]
+	76 -> 94
+	94 -> nil
+	24 [fillcolor=red fixedsize=shape label="id:24 x=136.373950 y=235.358482" width=3]
+	35 -> 24
+	45 [fillcolor=black fixedsize=shape label="id:45 x=127.381697 y=68.336283" width=3]
+	24 -> 45
+	100 [fillcolor=red fixedsize=shape label="id:100 x=104.282499 y=199.400685" width=3]
+	45 -> 100
+	75 [fillcolor=black fixedsize=shape label="id:75 x=99.377274 y=105.619197" width=3]
+	100 -> 75
+	75 -> nil
+	90 [fillcolor=black fixedsize=shape label="id:90 x=123.370202 y=244.105287" width=3]
+	100 -> 90
+	90 -> nil
+	105 [fillcolor=red fixedsize=shape label="id:105 x=107.175817 y=153.387706" width=3]
+	90 -> 105
+	105 -> nil
+	101 [fillcolor=black fixedsize=shape label="id:101 x=131.390085 y=248.158102" width=3]
+	45 -> 101
+	77 [fillcolor=red fixedsize=shape label="id:77 x=130.377242 y=265.509846" width=3]
+	101 -> 77
+	77 -> nil
+	89 [fillcolor=red fixedsize=shape label="id:89 x=134.958788 y=253.392249" width=3]
+	101 -> 89
+	89 -> nil
+	85 [fillcolor=black fixedsize=shape label="id:85 x=151.365948 y=49.859491" width=3]
+	24 -> 85
+	97 [fillcolor=red fixedsize=shape label="id:97 x=143.703308 y=181.072446" width=3]
+	85 -> 97
+	23 [fillcolor=black fixedsize=shape label="id:23 x=141.375340 y=224.848177" width=3]
+	97 -> 23
+	23 -> nil
+	106 [fillcolor=red fixedsize=shape label="id:106 x=140.748313 y=163.508175" width=3]
+	23 -> 106
+	106 -> nil
+	92 [fillcolor=black fixedsize=shape label="id:92 x=147.841141 y=254.418429" width=3]
+	97 -> 92
+	92 -> nil
+	103 [fillcolor=red fixedsize=shape label="id:103 x=146.325473 y=178.677668" width=3]
+	92 -> 103
+	103 -> nil
+	51 [fillcolor=black fixedsize=shape label="id:51 x=153.008423 y=89.568231" width=3]
+	85 -> 51
+	51 -> nil
+	86 [fillcolor=red fixedsize=shape label="id:86 x=154.202157 y=245.369073" width=3]
+	51 -> 86
+	86 -> nil
+	11 [fillcolor=black fixedsize=shape label="id:11 x=204.295190 y=63.775500" width=3]
+	22 -> 11
+	1 [fillcolor=black fixedsize=shape label="id:1 x=183.289950 y=249.512677" width=3]
+	11 -> 1
+	82 [fillcolor=red fixedsize=shape label="id:82 x=168.142746 y=30.854857" width=3]
+	1 -> 82
+	71 [fillcolor=black fixedsize=shape label="id:71 x=162.170996 y=276.157461" width=3]
+	82 -> 71
+	71 -> nil
+	93 [fillcolor=red fixedsize=shape label="id:93 x=167.234051 y=250.535969" width=3]
+	71 -> 93
+	93 -> nil
+	66 [fillcolor=black fixedsize=shape label="id:66 x=178.462079 y=149.071868" width=3]
+	82 -> 66
+	66 -> nil
+	99 [fillcolor=red fixedsize=shape label="id:99 x=178.008616 y=156.628199" width=3]
+	66 -> 99
+	99 -> nil
+	44 [fillcolor=red fixedsize=shape label="id:44 x=195.642351 y=194.322337" width=3]
+	1 -> 44
+	57 [fillcolor=black fixedsize=shape label="id:57 x=195.148608 y=38.364369" width=3]
+	44 -> 57
+	57 -> nil
+	87 [fillcolor=red fixedsize=shape label="id:87 x=195.247513 y=198.356081" width=3]
+	57 -> 87
+	87 -> nil
+	50 [fillcolor=black fixedsize=shape label="id:50 x=199.953153 y=226.799427" width=3]
+	44 -> 50
+	102 [fillcolor=red fixedsize=shape label="id:102 x=197.065696 y=181.091062" width=3]
+	50 -> 102
+	102 -> nil
+	48 [fillcolor=red fixedsize=shape label="id:48 x=203.959480 y=199.522984" width=3]
+	50 -> 48
+	48 -> nil
+	34 [fillcolor=red fixedsize=shape label="id:34 x=239.860827 y=173.611145" width=3]
+	11 -> 34
+	33 [fillcolor=black fixedsize=shape label="id:33 x=230.046683 y=296.349861" width=3]
+	34 -> 33
+	8 [fillcolor=red fixedsize=shape label="id:8 x=210.332119 y=45.425371" width=3]
+	33 -> 8
+	49 [fillcolor=black fixedsize=shape label="id:49 x=207.451039 y=119.488463" width=3]
+	8 -> 49
+	49 -> nil
+	39 [fillcolor=black fixedsize=shape label="id:39 x=210.852611 y=240.632115" width=3]
+	8 -> 39
+	39 -> nil
+	80 [fillcolor=red fixedsize=shape label="id:80 x=214.738994 y=73.598316" width=3]
+	39 -> 80
+	80 -> nil
+	70 [fillcolor=black fixedsize=shape label="id:70 x=232.603080 y=207.149631" width=3]
+	33 -> 70
+	70 -> nil
+	79 [fillcolor=red fixedsize=shape label="id:79 x=235.430440 y=38.762529" width=3]
+	70 -> 79
+	79 -> nil
+	41 [fillcolor=black fixedsize=shape label="id:41 x=247.431309 y=134.830111" width=3]
+	34 -> 41
+	55 [fillcolor=black fixedsize=shape label="id:55 x=242.019369 y=57.753172" width=3]
+	41 -> 55
+	55 -> nil
+	78 [fillcolor=red fixedsize=shape label="id:78 x=246.440276 y=187.225906" width=3]
+	55 -> 78
+	78 -> nil
+	38 [fillcolor=black fixedsize=shape label="id:38 x=247.507252 y=118.334253" width=3]
+	41 -> 38
+	38 -> nil
+	10 [fillcolor=red fixedsize=shape label="id:10 x=307.615571 y=54.216141" width=3]
+	2 -> 10
+	21 [fillcolor=black fixedsize=shape label="id:21 x=288.197701 y=62.270726" width=3]
+	10 -> 21
+	42 [fillcolor=black fixedsize=shape label="id:42 x=264.373661 y=105.564911" width=3]
+	21 -> 42
+	36 [fillcolor=red fixedsize=shape label="id:36 x=259.112450 y=270.762944" width=3]
+	42 -> 36
+	68 [fillcolor=black fixedsize=shape label="id:68 x=259.084351 y=242.508282" width=3]
+	36 -> 68
+	68 -> nil
+	81 [fillcolor=red fixedsize=shape label="id:81 x=254.183392 y=204.431086" width=3]
+	68 -> 81
+	81 -> nil
+	69 [fillcolor=black fixedsize=shape label="id:69 x=259.667656 y=128.292787" width=3]
+	36 -> 69
+	69 -> nil
+	30 [fillcolor=red fixedsize=shape label="id:30 x=277.332891 y=99.720981" width=3]
+	42 -> 30
+	17 [fillcolor=black fixedsize=shape label="id:17 x=266.473447 y=92.072095" width=3]
+	30 -> 17
+	17 -> nil
+	84 [fillcolor=red fixedsize=shape label="id:84 x=276.088479 y=103.108074" width=3]
+	17 -> 84
+	84 -> nil
+	28 [fillcolor=black fixedsize=shape label="id:28 x=282.312505 y=13.357328" width=3]
+	30 -> 28
+	28 -> nil
+	54 [fillcolor=red fixedsize=shape label="id:54 x=277.571607 y=88.838453" width=3]
+	28 -> 54
+	54 -> nil
+	15 [fillcolor=black fixedsize=shape label="id:15 x=302.785696 y=141.335779" width=3]
+	21 -> 15
+	27 [fillcolor=red fixedsize=shape label="id:27 x=300.712215 y=8.717864" width=3]
+	15 -> 27
+	52 [fillcolor=black fixedsize=shape label="id:52 x=297.687190 y=250.448716" width=3]
+	27 -> 52
+	59 [fillcolor=red fixedsize=shape label="id:59 x=291.760759 y=248.825705" width=3]
+	52 -> 59
+	59 -> nil
+	43 [fillcolor=red fixedsize=shape label="id:43 x=299.846168 y=287.250740" width=3]
+	52 -> 43
+	43 -> nil
+	47 [fillcolor=black fixedsize=shape label="id:47 x=300.911031 y=165.785977" width=3]
+	27 -> 47
+	47 -> nil
+	40 [fillcolor=black fixedsize=shape label="id:40 x=303.301214 y=59.070994" width=3]
+	15 -> 40
+	32 [fillcolor=red fixedsize=shape label="id:32 x=303.250711 y=139.485216" width=3]
+	40 -> 32
+	32 -> nil
+	5 [fillcolor=red fixedsize=shape label="id:5 x=304.791776 y=274.257657" width=3]
+	40 -> 5
+	5 -> nil
+	3 [fillcolor=black fixedsize=shape label="id:3 x=343.644500 y=289.056863" width=3]
+	10 -> 3
+	14 [fillcolor=black fixedsize=shape label="id:14 x=329.814693 y=118.188497" width=3]
+	3 -> 14
+	16 [fillcolor=red fixedsize=shape label="id:16 x=312.437537 y=24.375591" width=3]
+	14 -> 16
+	20 [fillcolor=black fixedsize=shape label="id:20 x=309.343721 y=64.560187" width=3]
+	16 -> 20
+	20 -> nil
+	37 [fillcolor=red fixedsize=shape label="id:37 x=311.531742 y=256.658069" width=3]
+	20 -> 37
+	37 -> nil
+	9 [fillcolor=black fixedsize=shape label="id:9 x=322.997807 y=39.552988" width=3]
+	16 -> 9
+	9 -> nil
+	56 [fillcolor=red fixedsize=shape label="id:56 x=326.781609 y=132.605362" width=3]
+	9 -> 56
+	56 -> nil
+	12 [fillcolor=black fixedsize=shape label="id:12 x=336.059692 y=22.428414" width=3]
+	14 -> 12
+	12 -> nil
+	31 [fillcolor=red fixedsize=shape label="id:31 x=338.496340 y=284.509306" width=3]
+	12 -> 31
+	31 -> nil
+	6 [fillcolor=red fixedsize=shape label="id:6 x=369.791776 y=274.257657" width=3]
+	3 -> 6
+	18 [fillcolor=black fixedsize=shape label="id:18 x=360.201606 y=209.095158" width=3]
+	6 -> 18
+	19 [fillcolor=black fixedsize=shape label="id:19 x=350.192635 y=39.331256" width=3]
+	18 -> 19
+	19 -> nil
+	63 [fillcolor=red fixedsize=shape label="id:63 x=353.849992 y=187.818168" width=3]
+	19 -> 63
+	63 -> nil
+	7 [fillcolor=black fixedsize=shape label="id:7 x=360.483818 y=37.468878" width=3]
+	18 -> 7
+	7 -> nil
+	67 [fillcolor=red fixedsize=shape label="id:67 x=367.884024 y=13.783682" width=3]
+	7 -> 67
+	67 -> nil
+	46 [fillcolor=black fixedsize=shape label="id:46 x=381.129908 y=291.156813" width=3]
+	6 -> 46
+	13 [fillcolor=black fixedsize=shape label="id:13 x=374.065704 y=22.880725" width=3]
+	46 -> 13
+	13 -> nil
+	53 [fillcolor=red fixedsize=shape label="id:53 x=395.828013 y=286.319374" width=3]
+	46 -> 53
+	73 [fillcolor=black fixedsize=shape label="id:73 x=390.864380 y=74.026856" width=3]
+	53 -> 73
+	73 -> nil
+	4 [fillcolor=black fixedsize=shape label="id:4 x=408.644500 y=289.056863" width=3]
+	53 -> 4
+	4 -> nil
+	74 [fillcolor=red fixedsize=shape label="id:74 x=395.833216 y=86.991008" width=3]
+	4 -> 74
+	74 -> nil
+}

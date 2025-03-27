@@ -1,0 +1,233 @@
+<svg viewBox=" 0 -10 1500 1500" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<marker id="arrowhead" makerWidth="3.5" markerHeight="5" refX="0" refY="2.5" orient="auto">
+			<polygon points="0 0, 2.5 2.5, 0 5"/>
+		</marker>
+	</defs>
+	<line x1="-0.5" y1="0" x2="1000" y2="0" style="stroke:black;stroke-width:1" marker-end="url(#arrowhead)"/>
+	<line x1="0" y1="0" x2="0" y2="900" style="stroke:black; stroke-width:1" marker-end="url(#arrowhead)"/>
+	<text x="1010" y="0" style="font:15px sans-serif; stroke:black; stroke-width:0.5; text-anchor:start">x</text>
+	<text x="0" y="920" style="font:15px sans-serif; stroke:black; stroke-width:0.5; text-anchor:middle">y</text>
+	<text id="23" x="161.495127" y="274.490365" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="43" x="89.228745" y="35.809737" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="47" x="32.835159" y="137.660981" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="36" x="12.179251" y="129.591387" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="57" x="3.673057" y="209.696125" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="52" x="1.157028" y="194.748894" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<line id="83" x1="4.407548" y1="192.676031" x2="8.826965" y2="197.095449" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="76" cx="3.950972" cy="40.988988" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="39" x="9.428203" y="161.594820" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<line id="98" x1="31.562097" y1="245.714369" x2="35.981514" y2="250.133786" style="stroke:#c83771; stroke-width:0.5"/>
+	<line id="87" x1="25.544757" y1="151.690296" x2="29.964174" y2="156.109713" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="79" cx="15.117383" cy="537.290413" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<line id="102" x1="13.049573" y1="300.900169" x2="17.468991" y2="305.319586" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="67" cx="18.378676" cy="442.211736" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<circle id="75" cx="28.628201" cy="510.318885" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<circle id="66" cx="32.294412" cy="444.781515" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<line id="100" x1="56.712279" y1="212.237179" x2="61.131697" y2="216.656596" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="30" x="53.380453" y="218.283765" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<line id="91" x1="41.053943" y1="181.860463" x2="45.473360" y2="186.279881" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="16" x="36.600809" y="160.475960" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<line id="101" x1="52.428949" y1="289.571097" x2="56.848367" y2="293.990514" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="59" x="58.806312" y="262.897267" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="44" x="88.971433" y="9.503370" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<line id="92" x1="85.486544" y1="209.747769" x2="89.905961" y2="214.167187" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="56" x="131.718523" y="45.819834" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="26" x="103.116520" y="95.551257" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="14" x="100.553922" y="159.616900" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="35" x="89.564652" y="213.051655" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<circle id="78" cx="102.330474" cy="420.377698" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="41" x="106.263603" y="142.131761" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<line id="95" x1="111.202394" y1="265.600993" x2="115.621811" y2="270.020411" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="65" cx="107.661380" cy="563.034153" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<line id="84" x1="111.921307" y1="239.042067" x2="116.340724" y2="243.461484" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="46" x="144.973313" y="118.384223" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="15" x="137.712067" y="106.681148" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="21" x="135.991203" y="241.436601" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<line id="89" x1="140.561502" y1="180.355712" x2="144.980920" y2="184.775130" style="stroke:#c83771; stroke-width:0.5"/>
+	<line id="88" x1="143.852353" y1="232.678963" x2="148.271771" y2="237.098380" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="33" x="156.577218" y="45.218928" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="31" x="152.273971" y="12.235264" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<line id="97" x1="149.479488" y1="184.407681" x2="153.898906" y2="188.827098" style="stroke:#c83771; stroke-width:0.5"/>
+	<line id="99" x1="147.113177" y1="231.933145" x2="151.532595" y2="236.352562" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="38" x="149.930060" y="38.929369" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<line id="94" x1="154.043292" y1="247.776577" x2="158.462710" y2="252.195994" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="74" cx="161.322037" cy="469.917849" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="6" x="267.698550" y="20.851465" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="22" x="193.149271" y="75.680693" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<line id="85" x1="168.733151" y1="267.480260" x2="173.152568" y2="271.899677" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="32" x="162.549990" y="45.135571" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="48" x="161.503133" y="7.002877" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<line id="90" x1="162.398378" y1="192.378878" x2="166.817795" y2="196.798295" style="stroke:#c83771; stroke-width:0.5"/>
+	<line id="93" x1="164.482162" y1="292.335694" x2="168.901579" y2="296.755111" style="stroke:#c83771; stroke-width:0.5"/>
+	<circle id="80" cx="165.208531" cy="558.383146" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="45" x="169.913105" y="273.613039" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="42" x="187.649076" y="46.887459" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="4" x="231.062932" y="78.775035" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<circle id="73" cx="207.640330" cy="406.384216" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<circle id="68" cx="204.109605" cy="6.647148" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<line id="86" x1="197.208548" y1="301.309555" x2="201.627965" y2="305.728973" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="60" x="193.458273" y="90.940852" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<line id="96" x1="200.786784" y1="295.213182" x2="205.206202" y2="299.632599" style="stroke:#c83771; stroke-width:0.5"/>
+	<text id="37" x="211.702465" y="206.823750" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="62" x="229.235056" y="153.526988" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="3" x="228.040725" y="94.970852" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="61" x="253.796943" y="17.182914" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="17" x="237.868964" y="11.367269" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="8" x="235.003531" y="21.852135" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="53" x="231.759339" y="226.236001" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<circle id="81" cx="235.549784" cy="359.529005" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="10" x="246.344689" y="122.534173" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<circle id="82" cx="252.222701" cy="368.202749" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="18" x="255.038316" y="81.198801" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="34" x="265.867252" y="208.747716" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<circle id="77" cx="264.918157" cy="408.655296" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<rect id="2" x="265.899081" y="331.771969" width="25.000000" height="40.000000" style="stroke:#6600FF; stroke-width:0.5; fill:#6F6F91; fill-opacity: .25"/>
+	<text id="5" x="350.534379" y="87.087471" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="49" x="315.882457" y="298.668452" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="50" x="292.384800" y="296.890877" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="51" x="285.377596" y="149.706450" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<rect id="1" x="275.899081" y="451.771969" width="25.000000" height="40.000000" style="stroke:#6600FF; stroke-width:0.5; fill:#6F6F91; fill-opacity: .25"/>
+	<circle id="70" cx="286.873033" cy="483.608244" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="9" x="314.231822" y="131.359690" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="55" x="298.844925" y="232.488863" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="20" x="329.722396" y="86.992479" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="54" x="327.591895" y="283.215822" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="24" x="326.906588" y="146.843736" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<circle id="71" cx="328.363380" cy="422.672029" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="11" x="348.268974" y="148.562764" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<circle id="63" cx="335.621067" cy="532.074670" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<circle id="72" cx="334.203033" cy="487.857227" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<circle id="69" cx="336.009466" cy="451.253270" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+	<text id="12" x="366.567922" y="110.899395" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<text id="19" x="364.518930" y="157.444062" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="25" x="362.970569" y="163.993063" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="27" x="354.781172" y="284.624126" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="28" x="366.069380" y="182.066049" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="13" x="377.958315" y="120.759663" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[>-|-<]]>
+	</text>
+	<text id="29" x="370.718517" y="100.620849" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="40" x="368.048710" y="100.427439" style="font:7.5px sans-serif; stroke:#2ca02c; stroke-width:0.5; fill:#2ca02c; text-anchor:middle;">
+		<![CDATA[~~~~]]>
+	</text>
+	<text id="58" x="382.237684" y="152.032323" style="font:7.5px sans-serif; stroke:#806600; stroke-width:0.5; fill:#806600; text-anchor:middle;">
+		<![CDATA[b]]>
+	</text>
+	<text id="7" x="378.430562" y="75.124878" style="font:7.5px sans-serif; stroke:#FFCC00; stroke-width:0.5; fill:#FFCC00; text-anchor:middle;">
+		<![CDATA[$]]>
+	</text>
+	<circle id="64" cx="384.899022" cy="159.866060" r="2.500000" style="stroke:#8de25f; stroke-width:0.5; fill:#2b13c8; fill-opacity: .25"/>
+</svg>

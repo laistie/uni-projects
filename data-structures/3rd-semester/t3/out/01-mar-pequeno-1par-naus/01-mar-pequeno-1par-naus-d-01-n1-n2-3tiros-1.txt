@@ -1,0 +1,46 @@
+RELATÓRIO DAS FUNÇÕES UTILIZADAS NO ARQUIVO .QRY
+
+[*] e 500.000000
+retângulo 1
+	x: 50.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 2
+	x: 115.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+
+[*] d 1 BB 52.500000
+	ponto de impacto (128.399081, 111.771969)
+	nau 2 atingida
+		x: 115.899081
+		y: 91.771969
+		w: 25.000000
+		h: 40.000000
+		cb: #6600FF
+		cf: #6F6F91
+	energia restante (nau 1): 447.500000
+
+[*] d 1 BB 52.500000
+	ponto de impacto (128.399081, 111.771969)
+	energia restante (nau 1): 395.000000
+
+[*] d 1 BB 77.500000
+	ponto de impacto (153.399081, 111.771969)
+	energia restante (nau 1): 317.500000
+
+[*] d 1 BB 82.500000
+	ponto de impacto (158.399081, 111.771969)
+	energia restante (nau 1): 235.000000
+
+[*] d 1 BB 87.500000
+	ponto de impacto (163.399081, 111.771969)
+	energia restante (nau 1): 147.500000
+
+CONSIDERAÇÕES FINAIS: enlouquecendo cada vez mais.

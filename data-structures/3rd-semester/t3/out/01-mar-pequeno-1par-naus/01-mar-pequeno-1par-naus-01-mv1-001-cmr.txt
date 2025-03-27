@@ -1,0 +1,25 @@
+RELATÓRIO DAS FUNÇÕES UTILIZADAS NO ARQUIVO .QRY
+
+[*] e 500.000000
+retângulo 2
+	x: 115.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 1
+	x: 50.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+
+[*] mv 102 26.520000 8.840000
+linha 102
+	posição inicial: (4.209573, 292.060169) (8.628991, 296.479586)
+	posição final: (30.729573, 300.900169) (35.148991, 305.319586)
+	cor: #c83771
+
+CONSIDERAÇÕES FINAIS: enlouquecendo cada vez mais.

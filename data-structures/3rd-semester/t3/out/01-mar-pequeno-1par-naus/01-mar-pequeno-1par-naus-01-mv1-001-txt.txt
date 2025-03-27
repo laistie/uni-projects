@@ -1,0 +1,28 @@
+RELATÓRIO DAS FUNÇÕES UTILIZADAS NO ARQUIVO .QRY
+
+[*] e 500.000000
+retângulo 2
+	x: 115.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 1
+	x: 50.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+
+[*] mv 38 20.000000 25.000000
+texto 38
+	posição inicial: (149.930060, 38.929369)
+	posição final: (169.930060, 63.929369)
+	cb: #2ca02c
+	cp: #2ca02c
+	a: m
+	texto: ~~~~
+
+CONSIDERAÇÕES FINAIS: enlouquecendo cada vez mais.

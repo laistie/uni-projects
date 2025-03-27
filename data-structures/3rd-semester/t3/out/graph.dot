@@ -1,0 +1,21 @@
+digraph G{
+	node [margin=0 fontcolor=white fontsize=14 width=0.5 shape=box style=filled]
+	edge [fontcolor=grey fontsize=12]
+	a [fillcolor=black fixedsize=shape label="id:10 x=50 y=30" width=2]
+	b [fillcolor=red fixedsize=shape label="id:20 x=30 y=30" width=2]
+	c [fillcolor=red fixedsize=shape label="id:30 x=70 y=30" width=2]
+	d [fillcolor=black fixedsize=shape label="id:40 x=20 y=30" width=2]
+	e [fillcolor=black fixedsize=shape label="id:15 x=40 y=30" width=2]
+	f [fillcolor=black fixedsize=shape label="id:25 x=60 y=30" width=2]
+	g [fillcolor=black fixedsize=shape label="id:66 x=80 y=30" width=2]
+	nil [fillcolor=black shape=point]
+	a -> b [label="e"]
+	a -> c [label="d"]
+	b -> {d e}
+	c -> {f g}
+	d -> nil [label="e"]
+	d -> nil [label="d"]
+	e ->  {nil nil}
+	f ->  nil
+	g ->  nil
+}

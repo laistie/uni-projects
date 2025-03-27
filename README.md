@@ -2,53 +2,7 @@
 
 In this repository are located some of the projects I developed for my university classes. Most of them (if not all) output reports in Portuguese, but are ~~almost~~ fully explained in English in this README; and I should warn you that I haven't gone through all of them before uploading them to my GitHub, although I can assure you they work :sweat_smile:
 
-
-## Compilers
-
-My first assignments from Compilers were actually developed using **only** C. After some time, I was introduced to Flex and Bison tools and began using them in my projects.
-
-> 5th semester (2024)
-
-### Portugol
-
-### Lexical analyzer
-
-In order to build a C compiler, the first step was making the lexical analyzer, which should use the Flex tool. In this assignment, each recognized token should have its classification printed. For example:
-
-input:
-```C
-if(@)
-{
-    a
-}
-```
-
-output:
-```
-IF
-L_PAREN
-error:lexical:1:4: @
-R_PAREN
-L_CURLY_BRACKET
-IDENTIFIER(a)
-R_CURLY_BRACKET
-```
-
-In the example above, there was also an error message indicating the line and column in which it occurred. Despite the error, the parsing process shall continue until it reaches the end of the input file.
-
-This was the first assignment of Compilers I, but it was already full of details, such as warnings display and max size of identifiers or unterminated comments handling.
-
-### Syntax analyzer
-
-In the specification of this project, there were syntax diagrams that helped declaring the grammar, but it still took a while to define all rules correctly. This step of making a C compiler was marked by the usage of the Bison tool and needed the previous analyzer.
-
-> 6th semester (2025)
-
-### dcmat
-
-### Register Allocation
-
-### Linear Scan
+Originally, this was intended to be my only university-related repository. However, I decided it'd be better to organize my projects separately. Most of the projects here are from my first and second years, so they are relatively basic.
 
 
 ## Computer Architecture :cd:
@@ -143,7 +97,7 @@ Basically, it was [T1](#T1) in terms of commands, but this time there was a mand
 
 ### T3
 
-This project was named "Pirate Fishing" and the basic components from .geo file - circles, rectangles, lines, texts - were the same as usual. Although each of them represented an element of the fishing:
+This project was named "Pirate Fishing" and the basic components from .geo file - circles, rectangles, lines, texts - were the same as usual. Although this time the data structure in which the elements were stored was a Red Black Tree. Also, each of the geometric shapes represented an element of the fishing:
 
 | GEOMETRIC SHAPE |     ELEMENT    |
 | :-------------: | :------------: |
@@ -162,6 +116,24 @@ Each of the ships can move, throw nets or even fire cannons; their actions cost 
 | Throw  | E = a/25 * d/5   |
 |  Shot  |       E = d      |
 
+
+When throwing a net, the direction of its launch should be specified. There's also a quantity of coins - they give +5 energy - for each animal fished:
+
+|  ANIMAL  | COINS |
+| :------: | :---: |
+|  lobster |  $20  |
+|  shrimp  |  $1   |
+|   fish   |  $5   |
+
+Lastly, the .qry file contains actions:
+
+| COMMAND |     PARAMETERS     | DESCRIPTION | .txt REPORT                                                                       |
+| :-----: | :----------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+|    e    |         v          | Energize all the ships to level v                                                                                                                                                  | IDs and data of the rectangles (ships)                                                                                                          |
+|    mv   |     i, dx, dy      | Move the shape with id 'i'                                                                                                                                                         | Data of the shape identified by 'i', including its initial and final positions                                                                  |
+|    lr   | i, lado, d, w, h   | Launch a net of dimensions (w,h) at a distance d from the specified side of the ship with id i, if the ship has enough energy. The captured elements are accounted for and removed | Data of the captured elements, including their values, the total $ for this capture and the sum of $ and the energy before and after the launch |
+|    d    |    i, lado, d      | Fire the cannon of ship i from the specified side, if the ship has enough energy. If it hits a ship, that ship is destroyed                                                        | The impact point. If a ship is hit, also report the ship's data                                                                                 |
+|    mc   | dx, dy, x, y, w, h | Move all fish that are within the region (x, y, w, h) by dx and dy                                                                                                                 | Data of moved fish, including their initial and final positions                                                                                 | 
 
 ## Discrete Mathematics :triangular_ruler:
 

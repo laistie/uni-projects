@@ -1,0 +1,123 @@
+RELATÓRIO DAS FUNÇÕES UTILIZADAS NO ARQUIVO .QRY
+
+[*] e 500.000000
+retângulo 2
+	x: 115.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+retângulo 1
+	x: 50.899081 
+	y: 91.771969 
+	w: 25.000000 
+	h: 40.000000 
+	cb: #6600FF 
+	cf: #6F6F91
+
+[*] mc 378.520000 0.000000 5.020000 7.090000 378.520000 288.630000
+círculo 72
+	posição inicial: (334.203033, 199.227227)
+	posição final: (712.723033, 199.227227)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 63
+	posição inicial: (335.621067, 243.444670)
+	posição final: (714.141067, 243.444670)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 69
+	posição inicial: (336.009466, 162.623270)
+	posição final: (714.529466, 162.623270)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 71
+	posição inicial: (328.363380, 134.042029)
+	posição final: (706.883380, 134.042029)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 70
+	posição inicial: (286.873033, 194.978244)
+	posição final: (665.393033, 194.978244)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 77
+	posição inicial: (264.918157, 120.025296)
+	posição final: (643.438157, 120.025296)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 82
+	posição inicial: (252.222701, 79.572749)
+	posição final: (630.742701, 79.572749)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 81
+	posição inicial: (235.549784, 70.899005)
+	posição final: (614.069784, 70.899005)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 73
+	posição inicial: (207.640330, 117.754216)
+	posição final: (586.160330, 117.754216)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 80
+	posição inicial: (165.208531, 269.753146)
+	posição final: (543.728531, 269.753146)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 74
+	posição inicial: (161.322037, 181.287849)
+	posição final: (539.842037, 181.287849)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 65
+	posição inicial: (107.661380, 274.404153)
+	posição final: (486.181380, 274.404153)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 78
+	posição inicial: (102.330474, 131.747698)
+	posição final: (480.850474, 131.747698)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 66
+	posição inicial: (32.294412, 156.151515)
+	posição final: (410.814412, 156.151515)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 79
+	posição inicial: (15.117383, 248.660413)
+	posição final: (393.637383, 248.660413)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 67
+	posição inicial: (18.378676, 153.581736)
+	posição final: (396.898676, 153.581736)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+círculo 75
+	posição inicial: (28.628201, 221.688885)
+	posição final: (407.148201, 221.688885)
+	r: 2.500000
+	cb: #8de25f
+	cf: #2b13c8
+
+CONSIDERAÇÕES FINAIS: enlouquecendo cada vez mais.
